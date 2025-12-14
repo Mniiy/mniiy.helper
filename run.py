@@ -1,5 +1,11 @@
+from libs.Gyawn import Gyawn
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+Gyawn= Gyawn()
 
 def main():
-    pass
+    tkn= os.getenv("tkn")
 
-print("coding")
+    Gyawn.run(tkn, log_level=0)
