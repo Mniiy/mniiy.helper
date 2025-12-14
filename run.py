@@ -9,3 +9,5 @@ def main():
     tkn= os.getenv("tkn")
 
     Gyawn.run(tkn, log_level=0)
+
+main()
