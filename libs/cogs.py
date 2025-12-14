@@ -6,5 +6,6 @@ async def loadFile(bot, path:str):
 
 async def loadFolder(bot, path:str):
     for file in os.listdir(path):
-        if file.endswith(".py") and os.path.isdir(f"path/{file}"):
-            await bot.load_extension(f"{path}.{file}")
+        if file.endswith(".py"):
+            print(file)
+            await bot.load_extension(f"{path}.{file.removesuffix(".py")}")

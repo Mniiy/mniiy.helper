@@ -13,4 +13,7 @@ class Gyawn(commands.Bot):
     async def on_ready(self):
         await cogs.loadFolder(self, "cmds")
 
+    def a(self):
+        return "A"
+
     
